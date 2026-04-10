@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ShriNgar Salon - Home</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.nav a:hover{background:#ff85c2;color:#ffffff;}
+</style>
+</head>
+
+<body id="top" style="background:#fff4fb;font-family:Verdana,Arial,Helvetica,sans-serif;">
+
+<header class="header">
+<div class="wrap">
+<div class="brand">
+<span class="logo-hi">श्री</span><span class="logo-en">ngar</span>
+<div class="tagline">Where beauty meets confidence</div>
+</div>
+</div>
+</header>
+
+<nav class="nav">
+<div class="wrap navline">
+<a href="index.html">Home</a>
+<span class="sep">|</span>
+<a href="about.html">About Us</a>
+<span class="sep">|</span>
+<a href="#">Services</a>
+<span class="sep">|</span>
+<a href="#">Gallery</a>
+<span class="sep">|</span>
+<a href="#" class="openForm">Book Appointment</a>
+<span class="sep">|</span>
+<a href="#">Contact</a>
+<span class="sep">|</span>
+<a href="bookings.html">View Bookings</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="hero-box">
+<h1>Glow Up Starts Here</h1>
+<p>
+We offer professional hair, skin & beauty services using premium
+products in a hygienic and relaxing environment.
+</p>
+<a class="btn openForm">Book Appointment</a>
+<a class="btn2" href="#">View Services</a>
+</div>
+</div>
+
+<main class="wrap">
+
+<div class="offer">
+<marquee behavior="alternate" direction="left">
+LAVENDER DAYS OFFER! Flat 30% OFF on Hair Spa + Facial Combo
+</marquee>
+</div>
+
+<!-- CHOOSE SECTION -->
+<section class="card">
+<h2>Choose Your Section</h2>
+<p class="sub">
+Explore curated services for Women and Men.
+</p>
+
+<div class="split women">
+<div class="overlay">
+<h3>Women’s Salon</h3>
+<p>Makeup • Hair • Skin • Bridal</p>
+<a class="splitbtn" href="womens.html">Enter</a>
+</div>
+</div>
+
+<div class="split men">
+<div class="overlay">
+<h3>Men’s Salon</h3>
+<p>Haircut • Beard • Facial • Grooming</p>
+<a class="splitbtn" href="mens.html">Enter</a>
+</div>
+</div>
+
+<div class="clear"></div>
+</section>
+
+<!-- POPULAR SERVICES -->
+<section class="card soft">
+<h2>Popular Services</h2>
+
+<div class="mini">
+<img src="images/hair.jpg" class="serviceimg">
+<h3>Hair Styling</h3>
+<p>Haircut, spa, smoothening & coloring.</p>
+</div>
+
+<div class="mini">
+<img src="images/skin.jpg" class="serviceimg">
+<h3>Skin Care</h3>
+<p>Cleanup, facial, detan & glow therapy.</p>
+</div>
+
+<div class="mini">
+<img src="images/makeup.jpg" class="serviceimg">
+<h3>Makeup</h3>
+<p>Party looks & bridal transformation.</p>
+</div>
+
+<div class="clear"></div>
+</section>
+
+<!-- QUICK INFO -->
+<section class="card">
+<h2>Quick Info</h2>
+
+<table class="t" width="100%" cellpadding="12" cellspacing="0">
+<tr>
+<th>Feature</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td><b>Products</b></td>
+<td>Premium salon & skincare brands</td>
+</tr>
+
+<tr>
+<td><b>Hygiene</b></td>
+<td>Sanitized tools & clean workspace</td>
+</tr>
+
+<tr>
+<td><b>Location</b></td>
+<td>Vellore, Tamil Nadu</td>
+</tr>
+</table>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="wrap">
+<p>
+ShriNgar Salon<br>
+Vellore, Tamil Nadu, India<br>
+Email: shringarsalon@gmail.com
+</p>
+<p>&copy; 2026 ShriNgar Salon</p>
+</div>
+</footer>
+
+<!-- POPUP FORM -->
+<div id="formModal" class="modal">
+<div class="modal-content">
+
+<span id="closeBtn">&times;</span>
+
+<h2>Book Appointment</h2>
+
+<form id="bookingForm">
+
+<label>Name:</label><br>
+<input type="text" id="name">
+<small id="nameError"></small><br><br>
+
+<label>Phone:</label><br>
+<input type="text" id="phone">
+<small id="phoneError"></small><br><br>
+
+<label>Service:</label><br>
+<select id="service">
+<option value="">Select Service</option>
+<option>Hair Styling</option>
+<option>Skin Care</option>
+<option>Makeup</option>
+</select><br><br>
+
+<label>Date:</label><br>
+<input type="date" id="date"><br><br>
+
+<label>Any special requirement:</label><br>
+<textarea id="query"></textarea><br><br>
+
+<button type="submit" class="btn">Submit</button>
+
+</form>
+
+<p id="msg"></p>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
